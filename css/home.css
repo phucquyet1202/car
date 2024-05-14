@@ -2,3 +2,13 @@
 .contentH1 {
     font-family: 'Roboto', sans-serif;
 }
+@media screen and (max-width: 600px) {
+    .column {
+    height: 800px
+    }
+  }
+  @media screen and (max-width: 200px) {
+    .column {
+    height: 1100px
+    }
+  }
