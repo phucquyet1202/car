@@ -32,23 +32,20 @@ margin-left: 10px;
         margin-right: 11px;
       }
   }
-  /* @media screen and (max-width: 639px) {
-    .column1>img {
-      width: 450px;
-margin-left: 75px;      
-      }
+  @media screen and (max-width: 639px) {
+   
       .content1{
         margin-right: 70px;
       }
       .content3{
         margin-right: 102px;
       }
-  } */
-  /* @media screen and (max-width: 599px) {
-   .column1>img {
-    width: 400px;
-   }
-  } */
+  }
+  @media screen and (max-width: 347px) {
+  .content4{
+    margin-left: -5px;
+  }
+  }
   @media screen and (max-width: 200px) {
     .column {
     height: 1100px
