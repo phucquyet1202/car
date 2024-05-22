@@ -2,6 +2,15 @@
 .contentH1 {
     font-family: 'Roboto', sans-serif;
 }
+.custom-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: center;
+}
+.icon-text {
+  margin-left: 12px;
+}
 @media screen and (max-width: 600px) {
     .column {
     height: 800px
@@ -19,7 +28,7 @@
   }
   @media screen and (max-width: 700px) {
     .column {
-    height: 800px
+    height: 700px
     }
     /* .column1>img {
       width: 500px;
@@ -46,6 +55,11 @@ margin-left: 10px;
     margin-left: -5px;
   }
   }
+  @media screen and (max-width: 400px) {
+    .column {
+      height: 900px
+    }
+  } 
   @media screen and (max-width: 200px) {
     .column {
     height: 1100px
@@ -56,9 +70,5 @@ margin-left: 10px;
       width: 200px;
       margin-right: 27px;
     }
-  }
-  @media screen and (max-width: 400px) {
-    .column1 {
-      width: 250px
-    }
-  } */
+  }/*
+ 
