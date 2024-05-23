@@ -11,6 +11,17 @@
 .icon-text {
   margin-left: 12px;
 }
+@media screen and (min-width: 1280px) {
+  .collum4{
+    width: 420px;
+  }
+  .collum5{
+    width: 485px;
+  }
+  .collum6{
+    width: 469px;
+  }
+} 
 @media screen and (max-width: 600px) {
     .column {
     height: 800px
@@ -55,6 +66,14 @@ margin-left: 10px;
     margin-left: -5px;
   }
   }
+  @media screen and (max-width: 365px) {
+    .collum4{
+      width: 310px;
+    }
+    .collum6{
+      width: 310px;
+    }
+  } 
   @media screen and (max-width: 400px) {
     .column {
       height: 900px
