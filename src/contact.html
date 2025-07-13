@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Nhà Xe Anh Tuyến</title>
+  <link href="./output.css" rel="stylesheet" />
+
+  <!-- ✅ Meta SEO -->
+  <meta name="description" content="Liên hệ Nhà xe Anh Tuyến chuyên xe ghép, đưa đón tận nơi từ Hà Nội đi Vĩnh Phúc, Tam Đảo. Hotline: 0569 543 999">
+  <meta name="keywords" content="nhà xe Anh Tuyến, xe ghép Hà Nội Vĩnh Phúc, xe đi Tam Đảo, xe đưa đón tận nơi, xe ghép giá rẻ">
+  <meta name="author" content="Nhà xe Anh Tuyến">
+
+  <!-- ✅ Open Graph -->
+  <meta property="og:title" content="Nhà xe Anh Tuyến - Xe ghép Hà Nội Vĩnh Phúc, Tam Đảo">
+  <meta property="og:description" content="Dịch vụ xe ghép, bao xe, gửi hàng nhanh chóng, tiện lợi. Liên hệ ngay: 0569 543 999">
+  <meta property="og:image" content="https://yourdomain.com/images/banner.jpg"> <!-- thay đúng domain -->
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:type" content="website">
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nhà xe Anh Tuyến">
+  <meta name="twitter:description" content="Xe ghép Hà Nội - Vĩnh Phúc, Tam Đảo. Hotline: 0569 543 999">
+  <meta name="twitter:image" content="https://yourdomain.com/images/banner.jpg">
+
+  <!-- ✅ Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Nhà xe Anh Tuyến",
+    "image": "https://yourdomain.com/images/banner.jpg",
+    "url": "https://yourdomain.com",
+    "telephone": "+840569543999",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hà Nội",
+      "addressCountry": "VN"
+    },
+    "description": "Dịch vụ xe ghép Hà Nội - Vĩnh Phúc, Tam Đảo, bao xe và gửi hàng nhanh chóng, tiện lợi."
+  }
+  </script>
+</head>
+
+<body class="font-sans text-gray-800">
+
+  <header class="bg-blue-600 text-white shadow-md fixed top-0 left-0 w-full z-50">
+  <div class="container mx-auto p-4">
+    <!-- Wrapper Flex -->
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+
+      <!-- Logo + Hotline + Hamburger (mobile layout) -->
+      <div class="flex items-center justify-between w-full md:w-auto">
+        <div>
+          <h1 class="text-xl font-bold">Nhà xe Anh Tuyến</h1>
+          <span class="text-sm font-medium block md:hidden">Hotline: 0569 543 999</span>
+        </div>
+        <!-- Hamburger icon (chỉ hiện trên mobile) -->
+        <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+          &#9776;
+        </button>
+      </div>
+
+      <!-- Navigation (hiện trên md) -->
+      <nav class="hidden md:flex space-x-10 mt-4 md:mt-0">
+        <a href="index.html" class="hover:underlne">Trang chủ</a>
+        <a href="about.html" class="hover:underline">Giới thiệu</a>
+        <!-- <a href="schedule.html" class="hover:underline">Lịch trình</a> -->
+        <a href="contact.html" class="hover:underline">Liên hệ</a>
+      </nav>
+       <!-- Hotline cho màn lớn -->
+      <span class="hidden md:inline-block text-sm font-medium">Hotline: 0569 543 999</span>
+
+    </div>
+
+    <!-- Mobile menu -->
+    <nav id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 mt-4">
+      <a href="index.html" class="hover:underline">Trang chủ</a>
+      <a href="about.html" class="hover:underline">Giới thiệu</a>
+      <!-- <a href="schedule.html" class="hover:underline">Lịch trình</a> -->
+      <a href="contact.html" class="hover:underline">Liên hệ</a>
+    </nav>
+  </div>
+
+  <!-- Toggle script -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</header>
+<!-- Banner -->
+ <section class="relative">
+  <img src="./images/banner.jpg" alt="banner" class="w-full h-[500px] md:h-[400px] object-cover">
+  
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center space-y-4">
+    <h2 class="text-white text-4xl font-bold">Dịch vụ xe ghép Anh Tuyến Hà Nội - Vĩnh Phúc</h2>
+    <h2 class="text-white text-4xl font-bold">Hotline: 0569 543 999</h2>
+  </div>
+</section>
+  <section class="py-12 px-4">
+    <div class="container mx-auto max-w-xl">
+      <h2 class="text-3xl font-bold mb-6">Liên hệ với chúng tôi</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Họ tên" class="w-full border p-2 rounded" required>
+        <input type="email" placeholder="Email" class="w-full border p-2 rounded" required>
+        <textarea placeholder="Nội dung" class="w-full border p-2 rounded" rows="5" required></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Gửi</button>
+      </form>
+    </div>
+  </section>
+
+ <!-- Footer -->
+<footer class="bg-blue-600 text-white text-center py-6">
+  <div class="flex justify-center items-center space-x-6 mb-4">
+    <!-- Zalo (dùng hình ảnh hoặc icon tùy ý) -->
+    <a href="https://zalo.me/0569543999" target="_blank" class="hover:text-gray-300">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Icon_of_Zalo.svg/2048px-Icon_of_Zalo.svg.png" alt="Zalo" class="w-6 h-6" />
+
+    </a>
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/NKT.96" target="_blank" class="hover:text-gray-300 text-xl">
+      <i class="fab fa-facebook-square"></i>
+    </a>
+    <!-- Phone -->
+    <a href="tel:0569543999" class="hover:text-gray-300 text-xl">
+      <i class="fas fa-phone-alt"></i>
+    </a>
+  </div>
+  <p>© 2025 Nhà xe Anh Tuyến. All rights reserved.</p>
+</footer>
+<!-- Floating Contact Icons -->
+<div class="fixed bottom-6 right-4 z-50 flex flex-col items-center space-y-3">
+
+  <!-- Zalo -->
+  <a href="https://zalo.me/0569543999" target="_blank"
+     class="relative group flex items-center justify-center w-12 h-12 rounded-full bg-blue-500 text-white shadow-lg hover:scale-110 transition-transform duration-300 animate-bounce">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Icon_of_Zalo.svg/2048px-Icon_of_Zalo.svg.png" alt="Zalo" class="w-6 h-6" />
+
+    <span class="absolute right-14 bg-black text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      Zalo
+    </span>
+  </a>
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/NKT.96" target="_blank"
+     class="relative group flex items-center justify-center w-12 h-12 rounded-full bg-blue-700 text-white shadow-lg hover:scale-110 transition-transform duration-300 animate-bounce">
+    <i class="fab fa-facebook-f text-lg"></i>
+    <span class="absolute right-14 bg-black text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      Facebook
+    </span>
+  </a>
+
+  <!-- Phone -->
+  <a href="tel:0569543999"
+     class="relative group flex items-center justify-center w-12 h-12 rounded-full bg-green-500 text-white shadow-lg hover:scale-110 transition-transform duration-300 animate-bounce">
+    <i class="fas fa-phone-alt text-lg"></i>
+    <span class="absolute right-14 bg-black text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      Gọi ngay
+    </span>
+  </a>
+
+</div>
+
+</body>
+</html>
