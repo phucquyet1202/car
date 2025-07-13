@@ -96,15 +96,46 @@
   </script>
 </header>
 <!-- Banner -->
- <section class="relative">
-  <img src="./images/banner.jpg" alt="banner" class="h-[500px] md:h-[400px] object-cover">
-  
+  <section class="relative">
+  <img src="./images/banner.jpg" alt="banner" class="w-full h-[700px] md:h-[400px] object-cover">
+
   <!-- Overlay -->
-  <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center space-y-4">
-    <h2 class="text-white text-4xl font-bold">Dịch vụ xe ghép Anh Tuyến Hà Nội - Vĩnh Phúc</h2>
-    <h2 class="text-white text-4xl font-bold">Hotline: 0569 543 999</h2>
+  <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-5xl px-4 mt-16 md:mt-12">
+
+      <!-- Cột trái: tuyến xe -->
+      <div class="flex flex-col space-y-4">
+        <div class="bg-green-600 text-white font-bold text-center px-6 py-4 rounded-lg shadow">
+          XE GHÉP - TIỆN CHUYẾN<br />VĨNH PHÚC - HÀ NỘI
+        </div>
+        <div class="bg-green-600 text-white font-bold text-center px-6 py-4 rounded-lg shadow">
+          XE GHÉP<br />HÀ NỘI - VĨNH PHÚC
+        </div>
+        <div class="bg-green-600 text-white font-bold text-center px-6 py-4 rounded-lg shadow">
+          XE GHÉP<br />HÀ NỘI - TAM ĐẢO 2 CHIỀU
+        </div>
+      </div>
+
+      <!-- Cột phải: ưu điểm -->
+      <div class="flex flex-col space-y-4">
+        <div class="bg-white text-green-700 border-2 border-green-500 font-semibold text-center px-6 py-4 rounded-full shadow">
+          Giá rẻ, đưa đón tận nơi
+        </div>
+        <div class="bg-white text-green-700 border-2 border-green-500 font-semibold text-center px-6 py-4 rounded-full shadow">
+          Xe sang trọng, đời mới
+        </div>
+        <div class="bg-white text-green-700 border-2 border-green-500 font-semibold text-center px-6 py-4 rounded-full shadow">
+          Phục vụ nhiệt tình 24/7
+        </div>
+        <div class="bg-white text-green-700 border-2 border-green-500 font-semibold text-center px-6 py-4 rounded-full shadow">
+          Gọi trước 30’ là có xe đón
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
+
   <section class="py-12 ">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold mb-6">Lịch trình xe chạy</h2>
@@ -134,7 +165,13 @@
       </table>
     </div>
   </section>
-
+<div class="fixed bottom-4 left-4 z-50">
+  <a href="tel:0587295295"
+     class="bg-blue-600 text-white font-bold text-base md:text-lg px-5 py-2 rounded-full shadow-lg flex items-center space-x-1">
+    <span class="text-white font-medium">Hotline:</span>
+    <span class="text-white font-medium">0569543999</span>
+  </a>
+</div>
   <!-- Footer -->
 <footer class="bg-blue-600 text-white text-center py-6">
   <div class="flex justify-center items-center space-x-6 mb-4">
